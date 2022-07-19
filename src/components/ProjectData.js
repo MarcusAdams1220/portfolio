@@ -11,35 +11,40 @@ const ProjectData = [
     type: 'Latest',
     type2: 'Solo',
     image: portfolioImg,
-    link: '.'
+    appLink: '.',
+    githubLink: 'https://github.com/MarcusAdams1220/portfolio'
   },
   {
     title: 'Basketball Workout Generator',
     description: 'PERN Stack',
     type: 'Solo',
     image: workoutGeneratorImg,
-    link: 'https://warm-lowlands-83978.herokuapp.com/'
+    appLink: 'https://warm-lowlands-83978.herokuapp.com/',
+    githubLink: 'https://github.com/MarcusAdams1220/basketball-workout-app'
   },
   { 
     title: 'Reel Reviews',
     description: 'Ruby & Sinatra',
     type: 'Solo',
     image: reelReviewsImg,
-    link: 'https://sheltered-everglades-43597.herokuapp.com/'
+    appLink: 'https://sheltered-everglades-43597.herokuapp.com/',
+    githubLink: 'https://github.com/MarcusAdams1220/reel-reviews'
   },
   {
     title: 'Basketball Tic Tac Toe',
     description: 'HTML, CSS & Javascript',
     type: 'Solo',
     image: ticTacToeImg,
-    link: 'https://marcusadams1220.github.io/tic-tac-toe/'
+    appLink: 'https://marcusadams1220.github.io/tic-tac-toe/',
+    githubLink: 'https://github.com/MarcusAdams1220/tic-tac-toe'
   },
   {
     title: 'Job Tracker',
     description: 'Javascript, Express & Postgresql',
     type: 'Group',
     image: jobTrackerImg,
-    link: 'https://jobs-app-tracker.herokuapp.com/'
+    appLink: 'https://jobs-app-tracker.herokuapp.com/',
+    githubLink: 'https://github.com/MarcusAdams1220/job-app-tracker'
   }
 ]
 
