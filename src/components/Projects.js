@@ -12,7 +12,7 @@ export const Projects = () => {
         <Row>
           <Col>
             <h2>Projects</h2>
-            <p>I've worked on a variety of projects both individually & in collaboration with other developers. Each of these projects pushed my limits, forced me to learn new concepts & allowed me to improve my indivdual & teamwork skills.</p>
+            <p>I've worked on a variety of projects both individually & in collaboration with other developers.</p>
             <Tab.Container id='projects-tabs' defaultActiveKey='first'>
               <Nav variant="tabs" defaultActiveKey="/home">
                 <Nav.Item>

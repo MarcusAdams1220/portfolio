@@ -15,6 +15,9 @@ export const ProjectCard = ({ title, description, image, appLink, githubLink }) 
           <Button target='_blank' href={githubLink} variant='dark' className='proj-btn'>&lt; View Code /&gt;</Button>
         </div>
       </div>
+      <div className="proj-cta">
+          
+      </div>
     </Col>
   )
 }

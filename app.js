@@ -27,18 +27,10 @@ app.listen(port, () => console.log(`Server Running On Port ${port}`));
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: "marcusadams1220@gmail.com",
-    pass: "klnediuyfakpzxvc"
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS
   },
 });
-
-// contactEmail.verify((error) => {
-//   if (error) {
-//     console.log(error);
-//   } else {
-//     console.log("Ready to Send");
-//   }
-// });
 
 router.post("/contact", (req, res) => {
   const name = req.body.firstName + req.body.lastName;
@@ -46,19 +38,19 @@ router.post("/contact", (req, res) => {
   const message = req.body.message;
   const phone = req.body.phone;
   const mail = {
-    from: name,
+    from: email,
     to: "marcusadams1220@gmail.com",
-    subject: "Portfolio Contact Form Submission",
+    subject: "Portfolio Form Submission",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
            <p>Phone: ${phone}</p>
-           <p>Message: ${message}</p>`,
+           <p>${message}</p>`,
   };
   contactEmail.sendMail(mail, (error) => {
     if (error) {
       res.json(error);
     } else {
-      res.json({ code: 200, status: "Message Sent" });
+      res.json({ code: 200 });
     }
   });
 });
