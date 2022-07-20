@@ -243,12 +243,15 @@ nav.navbar .navbar-toggler-icon:after {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 240px 0 150px 0;
+  padding: 15% 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  @media screen and (max-width: 768px) {
+    padding: 240px 0 150px 0;
+  }
 }
 
 .banner .align-items-center {
