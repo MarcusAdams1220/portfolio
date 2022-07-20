@@ -7,7 +7,7 @@ export const About  = () => {
     <section className='about' id='about'>
       <Container>
         <Row>
-          <Col className='about-img' sm={5}>
+          <Col className='about-img' sm={4}>
             <img src={headshot} alt="Marcus" className='headshot'/>
           </Col>
           <Col className='about-me-txt'>
