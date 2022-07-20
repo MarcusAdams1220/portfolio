@@ -50,7 +50,7 @@ export const Contact = () => {
           <Col md={6}>
             <img src={contactImage} alt='man using laptop'/>
           </Col>
-          <Col md={6}>
+          <Col md={6} className='contact-form'>
             <h2>Get In Touch</h2>
             <form onSubmit={handleSubmit}>
               <Row>
@@ -66,7 +66,7 @@ export const Contact = () => {
                 <Col sm={6} className='px-1'>
                   <input type="telephone" value={formDetails.phone} placeholder='Phone Number' onChange={(e) => onFormUpdate('phone', e.target.value)}/>
                 </Col>
-                <Col>
+                <Col className='px-1'>
                   <textarea rows="6" value={formDetails.message} placeholder='Message' onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
                   {
                   status.message &&

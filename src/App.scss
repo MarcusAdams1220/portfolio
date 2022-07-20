@@ -608,6 +608,9 @@ nav.navbar .navbar-toggler-icon:after {
 .contact img {
   width: 92%;
 }
+.contact .contact-form {
+  // background-color: red;
+}
 .contact h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -653,7 +656,6 @@ nav.navbar .navbar-toggler-icon:after {
   background-color: #fff;
   padding: 14px 48px;
   font-size: 18px;
-  margin-top: 25px;
   border-radius: 50px;
   position: relative;
   transition: 0.3s ease-in-out;
