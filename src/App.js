@@ -9,6 +9,7 @@ import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 
 function App() {
+  console.log("Join me & conquer the coding universe!")
   return (
     <div className="App">
       <NavBar />
