@@ -48,7 +48,7 @@ export const Contact = () => {
       <Container>
         <Row className='align-items-center'>
           <Col md={6}>
-            <img src={contactImage} alt='contact me'/>
+            <img src={contactImage} alt='man using laptop'/>
           </Col>
           <Col md={6}>
             <h2>Get In Touch</h2>

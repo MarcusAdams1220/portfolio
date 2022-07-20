@@ -47,7 +47,7 @@ export const Banner = () => {
             <Nav.Link href='#about' className='learn-about-me-btn'>Learn About Me <ArrowRightCircle size={25}/></Nav.Link>
           </Col>
           <Col xs={12} med={6} xl={5}>
-            <img src={headerImg} alt='header img' className='astro-img'/>
+            <img src={headerImg} alt='astronaut' className='astro-img'/>
           </Col>
         </Row>
       </Container>

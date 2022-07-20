@@ -34,7 +34,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? 'scrolled' : ''}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt='logo' className='navbar-logo'/>
+          <img src={logo} alt='marcus logo' className='navbar-logo'/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -50,8 +50,8 @@ export const NavBar = () => {
         <Button className='resume-btn' target='_blank' href='https://drive.google.com/file/d/10gQXVItW45ByEP8BxKIM0v8wSad7g7I_/view?usp=sharing'>Resume</Button>
           <span className='navbar-text'>
             <div className='social-icon'>
-              <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/marcus-g-adams"><img src='https://i.ibb.co/XzwwgC4/linkedin.png' alt=''/></a>
-              <a target='_blank' rel="noreferrer" href="https://github.com/MarcusAdams1220"><img src={githubIcon} alt=''/></a>
+              <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/marcus-g-adams"><img src='https://i.ibb.co/XzwwgC4/linkedin.png' alt='linkedIn logo'/></a>
+              <a target='_blank' rel="noreferrer" href="https://github.com/MarcusAdams1220"><img src={githubIcon} alt='Github logo'/></a>
             </div>
           </span>
         </Navbar.Collapse>
