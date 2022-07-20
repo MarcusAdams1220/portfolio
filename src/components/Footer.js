@@ -12,12 +12,12 @@ export const Footer = () => {
           <Col sm={6}>
             <img src={logo} alt='logo'/>
           </Col>
-          <Col sm={6} className='text-center text-sm-end'>
-            <div className="social-icon">
+          <Col sm={6} className='text-center footer-icons'>
+            <p>This portfolio was created using React</p>
+            <div className="social-icon footer-icon">
               <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/marcus-g-adams"><img src={linkedinIcon} alt="icon" /></a>
               <a target='_blank' rel="noreferrer" href="https://github.com/MarcusAdams1220"><img src={githubIcon} alt="icon" /></a>
             </div>
-            <p>This portfolio was created using React</p>
           </Col>
         </Row>
       </Container>
