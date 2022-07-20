@@ -31,7 +31,7 @@ export const Skills = () => {
           <Col>
             <div className="skill-bx">
               <h2>My Skills</h2>
-              <p>In 2022, I completed a software engineering bootcamp at General Assembly Australia. I learned so many skills that I now use every day & I'm on a mission to gain a broader & deeper understanding of languages & frameworks. This is only the beginning... </p>
+              <p>Working on challenging projects forced me to learn a variety of languages & frameworks. Now I'm on a mission to gain a broader & deeper understanding of web development. </p>
             </div>
             <Carousel responsive={responsive} infinite={true} className='skill-slider'>
               <div className="item">

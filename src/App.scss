@@ -35,53 +35,56 @@ body {
   background-color: #121212 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+  h1 {
+    font-weight: 700;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+  }
+  
+  p, a, li, button, ul {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  button {
+    border: 0;
+    background-color: transparent;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+  }
+  
+  @media (min-width:1700px) {
+    main .container {
+      max-width: 100%;
+      padding: 0 150px;
+    }
+  }
+  
+  p.success {
+    color: green;
+  }
+  
+  p.danger {
+    color: red;
+  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-  line-height: normal;
-}
-
-p, a, li, button, ul {
-  margin: 0;
-  padding: 0;
-  line-height: normal;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-button {
-  border: 0;
-  background-color: transparent;
-}
-
-input:focus, textarea:focus, select:focus {
-  outline: none;
-}
-
-@media (min-width:1700px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 150px;
-	}
-}
-
-p.success {
-	color: green;
-}
-
-p.danger {
-	color: red;
-}
 /************ Navbar CSS ************/
 nav.navbar {
   padding: 18px 0;
@@ -133,12 +136,12 @@ span.navbar-text {
 nav.navbar .resume-btn {
   background-color: transparent;
   border: 2px solid #fff;
-  border-radius: 0;
   margin-right: 10px;
 
   &:hover {
-    background-color: #fff;
-    color: #000;
+    background-color:#4A2FBD;
+    color: #fff;
+    border: 2px solid #4A2FBD;
   }
 
   @media screen and (max-width: 991px) {
@@ -240,16 +243,18 @@ nav.navbar .navbar-toggler-icon:after {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 240px 0 150px 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .banner .align-items-center {
   @media screen and (max-width: 768px) {
     margin-left: 30px;
+    margin-bottom: -40px;
   }
 }
 
@@ -278,27 +283,32 @@ nav.navbar .navbar-toggler-icon:after {
   line-height: 1.5em;
   width: 96%;
 }
-.banner .connect-btn {
+.banner .learn-about-me-btn {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: 30px;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
 }
-.banner .connect-btn svg {
+.banner .learn-about-me-btn svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner .connect-btn:hover svg {
+.banner .learn-about-me-btn:hover svg {
   margin-left: 25px;
 }
-.banner img {
+.banner .astro-img {
   animation: updown 3s linear infinite;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+  }
 }
+
 @keyframes updown {
     0% {
         transform: translateY(-20px);
@@ -319,17 +329,94 @@ nav.navbar .navbar-toggler-icon:after {
   font-family: Kalam;
 }
 
+/************ About Css ************/
+.about {
+  margin: 100px auto;
+  width: 100vw;
+}
+.about .about-img {
+  display: flex;
+  justify-content: center;
+}
+.about .headshot {
+  border-radius: 50%;
+  width: 425px;
+  height: 400px;
+  box-shadow: 0px 0px 30px #fff;
+  animation: glow 3s linear infinite;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 50px;
+    width: 325px;
+    height: 300px;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+  50% {
+    box-shadow: 0px 0px 20px #fff;
+  }
+  100% {
+    box-shadow: 0px 0px 40px #fff;
+  }
+}
+
+.about .about-me-txt {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  h2 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+  }
+
+  .about-btn {
+    margin-top: 25px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    display: inline-block;
+
+    &:hover {
+      background-color: #4A2FBD;
+      color: #fff;
+      border: 2px solid #4A2FBD;
+
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: auto 50px;
+  }
+}
+
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;
   position: relative;
 }
 .skill-bx {
-  background: #121212;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 60px 225px;
   margin-top: -60px;
+  margin-bottom: -60px;
+
+  @media screen and (max-width: 768px) {
+    padding: 60px 50px;
+  }
 }
 .skill h2 {
 	font-size: 45px;
@@ -446,7 +533,7 @@ nav.navbar .navbar-toggler-icon:after {
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
-  border: 2px solid white;
+  border: 2px solid #585858;
   overflow: hidden;
   margin-bottom: 24px;
 }
