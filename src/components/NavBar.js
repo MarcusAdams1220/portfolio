@@ -15,13 +15,6 @@ export const NavBar = () => {
       } else {
         setScrolled(false)
       }
-
-      // if (window.scrollY < 400) {setActiveLink('home')}
-      // if (window.scrollY > 750) {setActiveLink('about')}
-      // if (window.scrollY > 1200) {setActiveLink('skills')}
-      // if (window.scrollY > 1800) {setActiveLink('projects')}
-      // if (window.scrollY > 2400) {setActiveLink('contact')}
-
     }
 
     window.addEventListener('scroll', onScroll)
@@ -32,8 +25,8 @@ export const NavBar = () => {
   const handleClick = (value) => {
     setActiveLink(value)
     const navbar = document.querySelector('#basic-navbar-nav')
-    navbar.classList.remove('show')
     const toggler = document.querySelector('.navbar-toggler')
+    navbar.classList.remove('show')
     toggler.classList.add('collapsed')
   }
   
@@ -54,10 +47,10 @@ export const NavBar = () => {
             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleClick('projects')}>Projects</Nav.Link>
             <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => handleClick('contact')}>Contact</Nav.Link>
           </Nav>
-        <Button className='resume-btn' target='_blank' href='https://drive.google.com/file/d/1gDxvjwxFw39wdkB43OqGN_q_lVdqT2NG/view?usp=sharing'>Resume</Button>
+        <Button className='resume-btn' target='_blank' href='https://drive.google.com/file/d/1oe6pDyLJfk_gcBJN2LClHRJvuM_YicWB/view?usp=sharing'>Resume</Button>
           <span className='navbar-text'>
             <div className='social-icon'>
-              <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/marcus1220"><img src='https://i.ibb.co/XzwwgC4/linkedin.png' alt='linkedIn logo'/></a>
+              <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/marcus1220"><img src={linkedinIcon} alt='linkedIn logo'/></a>
               <a target='_blank' rel="noreferrer" href="https://github.com/MarcusAdams1220"><img src={githubIcon} alt='Github logo'/></a>
             </div>
           </span>

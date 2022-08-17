@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Nav, Button } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 import headshot from '../assets/img/headshot.jpeg'
 
 export const About  = () => {
@@ -16,7 +16,7 @@ export const About  = () => {
             <br />
             <p>I recently graduated from General Assembly's Software Engineering Immersive course & I'm currently looking to join a team of passionate & supportive developers. I've always been a logical thinker with a creative side, so naturally when I dipped my toes into the waters of web development my eyes were opened to a world of endless possibilities. Nowadays, nothing makes me happier than taking an idea in my head & bringing it to life through code!
             </p>
-            <Button className='about-btn' target='_blank' href='https://drive.google.com/file/d/10gQXVItW45ByEP8BxKIM0v8wSad7g7I_/view?usp=sharing'>View Resume</Button>
+            <Button className='about-btn' target='_blank' href='https://drive.google.com/file/d/1oe6pDyLJfk_gcBJN2LClHRJvuM_YicWB/view?usp=sharing'>View Resume</Button>
           </Col>
         </Row>
       </Container>
