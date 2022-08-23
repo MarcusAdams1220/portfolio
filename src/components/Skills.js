@@ -35,6 +35,10 @@ export const Skills = () => {
             </div>
             <Carousel responsive={responsive} infinite={true} className='skill-slider'>
               <div className="item">
+                <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' alt='React'/>
+                <h5>React</h5>
+              </div>
+              <div className="item">
                 <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' alt='Javascript'/>
                 <h5>Javascript</h5>
               </div>
@@ -43,12 +47,20 @@ export const Skills = () => {
                 <h5>Typescript</h5>
               </div>
               <div className="item">
+                <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' alt='Node.js'/>
+                <h5>Node.js</h5>
+              </div>
+              <div className="item">
+                <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' alt='Python'/>
+                <h5>Python</h5>
+              </div>
+              <div className="item">
                 <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg' alt='Ruby'/>
                 <h5>Ruby</h5>
               </div>
               <div className="item">
-                <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' alt='React'/>
-                <h5>React</h5>
+                <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' alt='Postgresql'/>
+                <h5>Postgresql</h5>
               </div>
               <div className="item">
                 <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' alt='HTML'/>
@@ -57,18 +69,6 @@ export const Skills = () => {
               <div className="item">
                 <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' alt='CSS'/>
                 <h5>CSS</h5>
-              </div>
-              <div className="item">
-                <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' alt='Express.js' className='filter-white'/>
-                <h5>Express.js</h5>
-              </div>
-              <div className="item">
-                <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' alt='Node.js'/>
-                <h5>Node.js</h5>
-              </div>
-              <div className="item">
-                <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' alt='Postgresql'/>
-                <h5>Postgresql</h5>
               </div>
             </Carousel>
           </Col>
